@@ -5,6 +5,7 @@ https://www.selenium.dev/selenium/web/
 
 - FormPage: https://www.selenium.dev/selenium/web/formPage.html
 - WebForm: https://www.selenium.dev/selenium/web/web-form.html
+- Test Hidden elements: https://www.selenium.dev/selenium/web/coordinates_tests/page_with_hidden_element.html
 
 # Things to note in DOM model
 - The value of the 'name' attribute  is not required to be unique across the DOM.
@@ -12,4 +13,3 @@ https://www.selenium.dev/selenium/web/
 ## Selenium 4 Features:
 -   Relative locators: When using them, be mindful about the viewPort size. For e.g., in the mobile view, the element
 might not be "below" the element as in the web view.
-- 

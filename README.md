@@ -32,13 +32,14 @@ for specific interactions.
   1. Incorrect: Implicit wait AND Explicit wait - This will cause unpredictable wait time
   2. Correct: Implicit OR Explicit wait
 
-- Fluent wait - Same as the explicit wait with the addition of polling mechanism
+- Fluent wait - Allow specifying polling intervals and ignoring specific exceptions.
 ````
 //  default wait for a fluent wait is 500ms
 var wait = new FluentWait<>(driver)
         .withTimeout(Duration.ofSeconds(5))
-                .pollingEvery(Duration.ofMillis(300))
-                        .until(ExpectedConditions.visibilityOf(driver.findElement(byRevealed)));
+        .pollingEvery(Duration.ofMillis(300))
+        .ignoring(NoSuchElementException.class)
+        .until(ExpectedConditions.visibilityOf(driver.findElement(byRevealed)));
 ````
 
    

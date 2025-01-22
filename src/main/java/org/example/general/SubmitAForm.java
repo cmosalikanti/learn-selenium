@@ -1,4 +1,4 @@
-package org.example;
+package org.example.general;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
-import static org.junit.Assert.assertTrue;
 
 public class SubmitAForm {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.actions;
+package org.example.actionapi;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
